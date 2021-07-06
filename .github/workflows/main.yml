@@ -27,8 +27,8 @@ jobs:
       - 
         uses: docker/login-action@v1 
         with:
-          username: ${{ secrets.DOCKER_HUB_USERNAME }}
-          password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
+          username: liang0504
+          password: 17c8b30c-9878-4c4e-9bfa-1e9872a56452
       -
         name: Build and push
         id: docker_build
