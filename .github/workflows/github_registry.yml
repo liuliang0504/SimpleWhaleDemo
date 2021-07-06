@@ -32,7 +32,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
-          password: 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
+          password: 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
       -
         name: Build and push
         id: docker_build
