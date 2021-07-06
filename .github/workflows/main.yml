@@ -27,7 +27,7 @@ jobs:
       - 
         uses: docker/login-action@v1 
         with:
-          username: liang0504
+          username: ${{ secrets.DOCKER_HUB_USERNAME }}
           password: 17c8b30c-9878-4c4e-9bfa-1e9872a56452
       -
         name: Build and push
@@ -38,7 +38,7 @@ jobs:
           file: ./Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: liang0504/simplewhale:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/simplewhale:latest
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
       -
