@@ -32,7 +32,7 @@ jobs:
         with:
           registry: ghcr.io
           username: liuliang0504
-          password: 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
+          password: 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
       -
         name: Build and push
         id: docker_build
